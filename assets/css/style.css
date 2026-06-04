@@ -1,0 +1,27 @@
+
+:root {
+    --primary-color: #3563E9;
+    --secondary-color: #90A3BF;
+    --white-color: #fff;
+    --blach-color: #000;
+}
+
+body {
+    padding-inline: 64px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-search-wrapper {
+        display: flex;
+        gap: 84px;
+        align-items: center;
+    }
+    .cta-wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
