@@ -14,10 +14,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 40px;
     .logo-search-wrapper {
         display: flex;
         gap: 84px;
         align-items: center;
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        width: 492px;
+        outline: 1px solid #C3D4E966;
+        border-radius: 70px;
+        img {
+            cursor: pointer;
+        }
+        input {
+            border: none;
+            flex-grow: 1;
+            &:focus {
+                outline: none;
+            }
+        }
     }
     .cta-wrapper {
         display: flex;
@@ -117,4 +137,24 @@ header {
     }
 }
 
+section {
+    &:not(:last-of-type){
+        margin-bottom: 2rem;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: var(--secondary-color);
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    .wrapper {
+        display: flex;
+        gap: 2rem;
+    }
+}
 
