@@ -64,7 +64,7 @@ header {
     padding: 32px 0 0;
     width: 100%;
     max-width: 100%;
-    .wrapper {
+    .wrapper-card {
         margin-bottom: 32px;
         gap: 32px;
 
@@ -156,8 +156,9 @@ section {
         text-transform: capitalize;
         font-size: 1rem;
     }
-    .wrapper {
+    &>.wrapper {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
         .card {
            width: 304px;
