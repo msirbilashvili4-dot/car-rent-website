@@ -8,12 +8,16 @@
 
 body {
     padding-inline: 64px;
+    background-color: #F6F7F9;
 }
 
 header {
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-inline: -64px;
+    padding-inline: 64px;
     padding-block: 40px;
     .logo-search-wrapper {
         display: flex;
@@ -141,7 +145,7 @@ section {
     &:not(:last-of-type){
         margin-bottom: 2rem;
     }
-    .header {
+    &>.header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -155,6 +159,81 @@ section {
     .wrapper {
         display: flex;
         gap: 2rem;
-    }
-}
+        .card {
+           width: 304px;
+           padding: 24px;
+           border-radius: 10px;
+           background-color: var(--white-color);
+
+           .header {
+               display: flex;
+               justify-content: space-between;
+               align-items: flex-start;
+               p {
+                color: var(--secondary-color);
+                font-weight: bold;
+               }
+           }
+           .image {
+                display: flex;
+                justify-content: center;
+                padding-block: 64px;
+           }
+           .spesifications {
+                display: flex;
+                gap: 1rem;
+
+                div {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+
+                    span {
+                        color: var(--secondary-color);
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        line-height: 150%;
+                    }
+                }
+           }  
+           
+           .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 34px;
+
+                .price-wrapper {
+                    display: flex;
+
+                    span {
+                        display: block;
+                        font-size: 20px;
+                        font-weight: bold;
+                        &:last-child {
+                            color: var(--secondary-color);
+                            font-size: 14px;
+                            align-self: flex-end;
+                        }
+                    }
+                }
+
+                .rent-now {
+                    a{
+                        display: block;
+                        padding: 10px 20px;
+                        background-color: var(--primary-color);
+                        color: var(--white-color);
+                        border-radius: 4px;
+                        text-decoration: none;
+                    }                
+                }            
+            }                    
+        }           
+    }        
+}              
+     
+    
+
 
