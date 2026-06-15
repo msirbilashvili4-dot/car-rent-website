@@ -9,118 +9,128 @@
 </head>
 <body>
     
+    <div class="container">
         <header>
-        <div class="logo-search-wrapper">
-            <div class="logo">
-                <a href="index.html">
-                <img src="assets/images/icons/Logo.svg" alt="morent logo">
-                </a>
+            <div class="logo-search-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                    </a>
+                </div>
+                <div class="search">
+                    <img src="assets/images/icons/search.svg" alt="search icon">
+                    <input type="text" placeholder="Search something here">
+                    <a href="filter.html">
+                        <img src="assets/images/icons/filter.svg" alt="filter icon">
+                    </a>
+                </div>
+    
             </div>
-            <div class="search">
-                <img src="assets/images/icons/search.svg" alt="search icon">
-                <input type="text" placeholder="Search something here">
-                <a href="filter.html">
-                    <img src="assets/images/icons/filter.svg" alt="filter icon">
-                </a>
+    
+            <div class="cta-wrapper">
+                <div class="cta">
+                    <img src="assets/images/icons/heart.svg" alt="heart icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/notification.svg" alt="notification icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/setting2.svg" alt="settings icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/user.png" alt="user icon">
+                </div>
+    
             </div>
-
-        </div>
-
-        <div class="cta-wrapper">
-            <div class="cta">
-                <img src="assets/images/icons/heart.svg" alt="heart icon">
-            </div>
-            <div class="cta">
-                <img src="assets/images/icons/notification.svg" alt="notification icon">
-            </div>
-            <div class="cta">
-                <img src="assets/images/icons/setting2.svg" alt="settings icon">
-            </div>
-            <div class="cta">
-                <img src="assets/images/icons/user.png" alt="user icon">
-            </div>
-
-        </div>
-    </header>
-
-    <div>
-        <main>
-            <aside>
-                <form>
-                    <div class="filters type">
-                        <h3>type</h3>
-                        <div class="wrapper">
-                            <div>
-                                <input type="checkbox" id="sport">
-                                <label for="sport">Sport</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="SUV">
-                                <label for="SUV">SUV</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="MPV">
-                                <label for="MPV">MPV</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="Sedan">
-                                <label for="Sedan">Sedan</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="Coupe">
-                                <label for="Coupe">Coupe</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="Hatchback">
-                                <label for="Hatchback">Hatchback</label>
-                                <span>(10)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="filters capacity">
-                        <h3>capacity</h3>
-                        <div class="wrapper">
-                            <div>
-                                <input type="checkbox" id="2person">
-                                <label for="2person">2 Person</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="4person">
-                                <label for="4person">4 Person</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="6person">
-                                <label for="6person">6 Person</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="8person">
-                                <label for="8person">8 or More</label>
-                                <span>(10)</span>
-                            </div>
-                            <div>
-                        </div>
-
-                    </div>
-                    <div class="filters price">
-                        <h3>price</h3>
-                        <input type="range" name="" id="" value="100">
-                        <span>Max.$100.00</span>
-                    </div>
-                </form>
-            </aside>
+        </header>
 
 
-        </main>
     </div>
+
+    <main>
+        <aside>
+            <form>
+                <div class="filters type">
+                    <h3>type</h3>
+                    <div class="wrapper">
+                        <div>
+                            <input type="checkbox" id="sport" checked>
+                            <label for="sport">Sport </label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="suv" checked>
+                            <label for="suv">SUV</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mvp">
+                            <label for="mvp">MVP</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sedan">
+                            <label for="sedan">Sedan</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coupe">
+                            <label for="coupe">Coupe</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="hatchback">
+                            <label for="hatchback">Hatchback</label>
+                            <span>(10)</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="filters capacity">
+                    <h3>capacity</h3>
+                    <div class="wrapper">
+                        <div>
+                            <input type="checkbox" id="2person" checked>
+                            <label for="2person">Sport </label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="4person" >
+                            <label for="4person">SUV</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="6person">
+                            <label for="6person">MVP</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="8person" checked>
+                            <label for="8person">Sedan</label>
+                            <span>(10)</span>
+                        </div>
+                       
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="filters price">
+                    <h3>price</h3>
+                    <input type="range" name="" id="" value="80">
+                    <span>Max.100.</span>
+
+                </div>
+
+
+            </form>
+
+        </aside>
+    </main>
+
 
 </body>
 </html>
