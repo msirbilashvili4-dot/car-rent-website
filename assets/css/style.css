@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #3563E9;
     --secondary-color: #90A3BF;
@@ -29,6 +28,7 @@ header {
         gap: 84px;
         align-items: center;
     }
+
     .search {
         display: flex;
         align-items: center;
@@ -37,17 +37,21 @@ header {
         width: 492px;
         outline: 1px solid #C3D4E966;
         border-radius: 70px;
+
         img {
             cursor: pointer;
         }
+
         input {
             border: none;
             flex-grow: 1;
+
             &:focus {
                 outline: none;
             }
         }
     }
+
     .cta-wrapper {
         display: flex;
         gap: 20px;
@@ -57,6 +61,52 @@ header {
 
 main {
     background-color: rgb(246, 247, 249);
+}
+
+section.pickup-dropoff-filter {
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .filters-wrapper {
+            background-color: var(--white-color);
+            padding: 24px;
+
+            .header {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                &>label {
+                    text-transform: capitalize;
+                }
+
+            }
+
+            .body {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 48px;
+
+                .filter {
+                    &>label {
+                        display: block;
+                        text-transform: capitalize;
+                    }
+
+                    select {
+                        border: none;
+                    }
+
+
+                }
+            }
+        }
+    }
+
 }
 
 /* .flex {
@@ -152,20 +202,24 @@ main {
 
 section {
     padding: 2rem;
-    &:not(:last-of-type){
+
+    &:not(:last-of-type) {
         margin-bottom: 2rem;
     }
+
     &>.header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+
         h2 {
             color: var(--secondary-color);
             text-transform: capitalize;
             font-size: 1rem;
         }
     }
+
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -173,26 +227,38 @@ section {
         gap: 2rem;
 
         .card {
-           width: 304px;
-           padding: 24px;
-           border-radius: 10px;
-           background-color: var(--white-color);
+            width: 304px;
+            padding: 24px;
+            border-radius: 10px;
+            background-color: var(--white-color);
 
-           .header {
-               display: flex;
-               justify-content: space-between;
-               align-items: flex-start;
-               p {
-                color: var(--secondary-color);
-                font-weight: bold;
-               }
-           }
-           .image {
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                div {
+                    h3 {
+                        color: #1A202C;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        color: var(--secondary-color);
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            .image {
                 display: flex;
                 justify-content: center;
                 padding-block: 64px;
-           }
-           .spesifications {
+            }
+
+            .spesifications {
                 display: flex;
                 gap: 1rem;
 
@@ -209,9 +275,9 @@ section {
                         line-height: 150%;
                     }
                 }
-           }  
-           
-           .footer {
+            }
+
+            .footer {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -224,6 +290,8 @@ section {
                         display: block;
                         font-size: 20px;
                         font-weight: bold;
+                        color: #1A202C;
+
                         &:last-child {
                             color: var(--secondary-color);
                             font-size: 14px;
@@ -233,19 +301,19 @@ section {
                 }
 
                 .rent-now {
-                    a{
+                    a {
                         display: block;
                         padding: 10px 20px;
                         background-color: var(--primary-color);
                         color: var(--white-color);
                         border-radius: 4px;
                         text-decoration: none;
-                    }                
-                }            
-            }                    
-        }           
-    }    
-    
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         display: flex;
         align-items: center;
@@ -268,34 +336,48 @@ section {
 
         }
     }
-}              
-     
-    
+}
+
+
 aside {
     padding: 2rem;
     background-color: var(--white-color);
+
     form {
         .filters {
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 56px;
             }
+
             h3 {
                 margin-bottom: 28px;
+                color: var(--secondary-color);
+                text-transform: uppercase;
             }
+
             .wrapper {
                 &>div {
                     display: flex;
                     gap: .5rem;
                     align-items: center;
-                    
-                    &:not(:last-child){
+
+                    &:not(:last-child) {
                         margin-bottom: 2rem;
                     }
 
+                    input {}
+
+                    label {
+                        color: #596780;
+                        font-size: 20px;
+                    }
+
+                    span {}
                 }
             }
 
         }
+
         .price {
             input {
                 width: 296px;
@@ -303,4 +385,3 @@ aside {
         }
     }
 }
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,13 @@
 </head>
 
 <body>
-    
+
     <div class="container">
         <header>
             <div class="logo-search-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                    <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                        <img src="assets/images/icons/Logo.svg" alt="morent logo">
                     </a>
                 </div>
                 <div class="search">
@@ -25,9 +26,9 @@
                         <img src="assets/images/icons/filter.svg" alt="filter icon">
                     </a>
                 </div>
-    
+
             </div>
-    
+
             <div class="cta-wrapper">
                 <div class="cta">
                     <img src="assets/images/icons/heart.svg" alt="heart icon">
@@ -41,7 +42,7 @@
                 <div class="cta">
                     <img src="assets/images/icons/user.png" alt="user icon">
                 </div>
-    
+
             </div>
         </header>
 
@@ -77,6 +78,71 @@
 
     <main>
         <div class="container">
+            <section class="pickup-dropoff-filter">
+                <form>
+                    <div class="filters-wrapper pickup">
+                        <div class="header">
+                            <input id="pickup" type="radio">
+                            <label for="pickup">pick - up</label>
+
+                        </div>
+                        <div class="body">
+                            <div class="location filter">
+                                <label for="cars">locations</label>
+                                <select name="cars" id="cars">
+                                    <option value="">Select your city</option>
+                                    <option value="volvo">Tbilisi</option>
+                                    <option value="saab">Batumi</option>
+                                    <option value="opel">Qutaisi</option>
+                                    <option value="audi">Poti</option>
+                                </select>
+                            </div>
+                            <div class="date filter">
+                                <label for="date">date</label>
+                                <input id="date" type="date">
+                                <!-- <input id="date" type="date" placeholder="Select your date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"> -->
+                            </div>
+                            <div class="time filter">
+                                <label for="time">time</label>
+                                <input id="time" type="time">
+                            </div>
+                        </div>
+                    </div>
+                    <button>button</button>
+                    <div class="filters-wrapper dropoff">
+                        <div class="header">
+                            <input id="dropoff" type="radio">
+                            <label for="dropoff">drop - off</label>
+
+                        </div>
+                        <div class="body">
+                            <div class="location filter">
+                                <label for="cars">locations</label>
+                                <select name="cars" id="cars">
+                                    <option value="">Select your city</option>
+                                    <option value="volvo">Tbilisi</option>
+                                    <option value="saab">Batumi</option>
+                                    <option value="opel">Qutaisi</option>
+                                    <option value="audi">Poti</option>
+                                </select>
+                            </div>
+                            <div class="date filter">
+                                <label for="date">date</label>
+                                <input id="date" type="date">
+                            </div>
+                            <div class="time filter">
+                                <label for="time">time</label>
+                                <input id="time" type="time">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+
+        </div>
+
+        <div class="container">
             <section>
                 <div class="header">
                     <h2>Popular Car</h2>
@@ -107,9 +173,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>2 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$99.00/</span>
@@ -119,7 +185,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -145,9 +211,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>2 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -157,7 +223,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -183,9 +249,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>4 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$96.00/</span>
@@ -195,7 +261,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -221,9 +287,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>2 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/ </span>
@@ -233,10 +299,10 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
-    
-    
+
+
                 </div>
             </section>
 
@@ -273,9 +339,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$72.00/</span>
@@ -285,12 +351,12 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
                             <div>
-                                <h3>CR  - V</h3>
+                                <h3>CR - V</h3>
                                 <p>SUV</p>
                             </div>
                             <img src="assets/images/icons/Like.png" alt="like icon">
@@ -311,9 +377,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -323,7 +389,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -349,9 +415,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -361,12 +427,12 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
                             <div>
-                                <h3>CR  - V</h3>
+                                <h3>CR - V</h3>
                                 <p>SUV</p>
                             </div>
                             <img src="assets/images/icons/Like.png" alt="like icon">
@@ -387,9 +453,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -399,7 +465,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -425,9 +491,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>4 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$76.00/</span>
@@ -437,7 +503,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -463,9 +529,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -475,7 +541,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -501,9 +567,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>4 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$74.00/</span>
@@ -513,7 +579,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                     <article class="card">
                         <div class="header">
@@ -539,9 +605,9 @@
                                 <img src="assets/images/icons/capacity.png" alt="capacity">
                                 <span>6 People</span>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="footer">
                             <div class="price-wrapper">
                                 <span>$80.00/</span>
@@ -551,7 +617,7 @@
                                 <a href="#">Rent Now</a>
                             </div>
                         </div>
-    
+
                     </article>
                 </div>
             </section>
@@ -567,4 +633,5 @@
 
 
 </body>
+
 </html>
