@@ -89,8 +89,10 @@ section.ads {
 
         h2,
         p {
+            position: relative;
             max-width: 284px;
             line-height: 150%;
+            z-index: 2;
         }
 
         h2 {
@@ -104,12 +106,14 @@ section.ads {
         }
 
         button {
+            position: relative;
             color: var(--white-color);
             padding: 10px 20px;
             line-height: 150%;
             text-transform: capitalize;
             border-radius: 4px;
             transition: all 0.3s ease;
+            z-index: 2;
 
             &:hover {
                 animation: shake .3s;
@@ -119,15 +123,57 @@ section.ads {
     }
 
     article:first-of-type {
-        background-color: var(--info-color);
-
+        background: repeating-radial-gradient(circle at 35% calc(100% - 60px), rgba(255, 255, 255, 0.08) 0px, rgba(255, 255, 255, 0.08) 20px, transparent 2px, transparent 60px), #5da2e8;
+        
         button {
             background-color: var(--primary-color);
         }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 75px solid transparent;
+            border-right: 125px solid #5da2e8;
+            border-bottom: 220px solid transparent;
+            background: none;
+
+
+        }
+
     }
 
     article:last-of-type {
-        background-color: var(--primary-color);
+        position: relative;
+        --width: 640px;
+        --height: 360px;
+        width: var(--width);
+        height: var(--height);
+        background-color: #3563E9;
+        background-image: url(/assets/images/icons/rectangle.svg);
+        background-size: 90px 120px;
+        background-position-x: -25px;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            content: "";
+            background-color: inherit;
+            background-image: inherit;
+            background-size: inherit;
+            background-position-x: 20px;
+            width: inherit;
+            height: calc(var(--height) / 3);
+            display: inline-block;
+            z-index: 1;
+        }
 
         button {
             background-color: var(--info-color);
@@ -355,6 +401,10 @@ section {
 
         }
     }
+
+    &[page="filter"] {
+        padding-inline: 2rem;
+    }
 }
 
 
@@ -463,4 +513,3 @@ aside {
 
     }
 }
-
