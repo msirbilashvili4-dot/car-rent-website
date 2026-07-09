@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-search-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                    </a>
+                </div>
+                <div class="search">
+                    <img src="assets/images/icons/search.svg" alt="search icon">
+                    <input type="text" placeholder="Search something here">
+                    <a href="filter.html">
+                        <img src="assets/images/icons/filter.svg" alt="filter icon">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cta-wrapper">
+                <div class="cta">
+                    <img src="assets/images/icons/heart.svg" alt="heart icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/notification.svg" alt="notification icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/setting2.svg" alt="settings icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/user.png" alt="user icon">
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <main class="flex">
+        <aside>
+            <form>
+                <div class="filters type">
+                    <h3>type</h3>
+                    <div class="wrapper">
+                        <div>
+                            <input type="checkbox" id="sport" checked>
+                            <label for="sport">Sport </label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="suv" checked>
+                            <label for="suv">SUV</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mvp">
+                            <label for="mvp">MVP</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sedan">
+                            <label for="sedan">Sedan</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coupe">
+                            <label for="coupe">Coupe</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="hatchback">
+                            <label for="hatchback">Hatchback</label>
+                            <span>(10)</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="filters capacity">
+                    <h3>capacity</h3>
+                    <div class="wrapper">
+                        <div>
+                            <input type="checkbox" id="2person" checked>
+                            <label for="2person">Sport </label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="4person">
+                            <label for="4person">SUV</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="6person">
+                            <label for="6person">MVP</label>
+                            <span>(10)</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="8person" checked>
+                            <label for="8person">Sedan</label>
+                            <span>(10)</span>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="filters price">
+                    <h3>price</h3>
+                    <input type="range" name="" id="" value="80">
+                    <span>Max.100.</span>
+
+                </div>
+
+
+            </form>
+
+        </aside>
+
+        <section class="details-page">
+            <section class="details flex">
+                <div class="image-gallery">
+                    <article class="preview">
+                        <h2>Easy way to rent a car at a low price</h2>
+                        <p>Providing cheap car rental services and safe and comfortable facilities.</p>
+                        <img src="assets/images/cars/car2.png" alt="car 2">
+                    </article>
+                    <div class="tumbnails flex">
+                        <img src="assets/images/cars/nissan gt-r.png" alt="nissan image">
+                        <img src="assets/images/view2.png" alt="drivers side">
+                        <img src="assets/images/view3.png" alt="passangers side">
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div class="description-header">
+                        <div class="flex justify-between align-center">
+                            <h1>car title</h1>
+                            <button class="favorite">
+                                <img src="" alt="">
+                            </button>
+
+                        </div>
+                        <div class="rating">
+                            <div class="stars-wrapper flex">
+                                stars
+                            </div>
+                            <div class="reviewers-count flex align-center">
+                                <span class="amount">123</span>
+                                <span>+reviewers</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        description
+                    </p>
+
+                    <div class="specifications">
+                        <div class="flex justify-between">
+                            <div class="property">property</div>
+                            <div class="value">value</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="property">property</div>
+                            <div class="value">value</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="property">property</div>
+                            <div class="value">value</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="property">property</div>
+                            <div class="value">value</div>
+                        </div>
+                    </div>
+
+                    <div class="description-footer flex justify-between align-center">
+                        <div class="price">
+                            <div class="flex">
+                                <span>$80.00/</span>
+                                <span>day</span>
+                            </div>
+                            <span class="old-price">$100</span>
+
+                        </div>
+                        <button>
+                            rent now
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="recent-car">
+                recent-car
+            </section>
+            <section class="recommendation-car">
+                recommendation-car
+            </section>
+
+        </section>
+
+
+    </main>
+
+    <div class="container">
+        <footer>
+            <div class="footer-inner-wrapper">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                    </a>
+                    <p>Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="nav-group about">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group community">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group socials">
+                        <h4>Socials</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+
+            <div class="footer-inner-wrapper">
+                <div class="copy">
+                    <p>©2022 MORENT. All rights reserved</p>
+                </div>
+                <div class="privacy-policy">
+                    <a href="#">Privacy & Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>

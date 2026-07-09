@@ -456,6 +456,147 @@ aside {
     }
 }
 
+section.details-page {
+    padding: 2rem;
+
+    .details {
+        padding: 0;
+
+        .image-gallery {
+            article.preview {
+                --width: 492px;
+                --height: 360px;
+                background-color: #3563E9;
+                background-image: url(../images/icons/rectangle.svg);
+                background-size: 90px 120px;
+                background-position-x: -25px;
+
+                position: relative;
+                padding: 24px;
+                border-radius: 10px;
+                color: var(--white-color);
+                width: var(--width);
+                height: var(--height);
+                overflow: hidden;
+
+                &:hover {
+                    img {
+                        animation: moveRight 1.5s ease-in-out forwards;
+                    }
+                }
+
+                h2,
+                p {
+                    position: relative;
+                    max-width: 284px;
+                    line-height: 150%;
+                    z-index: 2;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    text-transform: capitalize;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                    content: "";
+                    background-color: inherit;
+                    background-image: inherit;
+                    background-size: inherit;
+                    background-position-x: 20px;
+                    width: inherit;
+                    height: calc(var(--height) / 3);
+                    display: inline-block;
+                    z-index: 1;
+                }
+
+                &>img {
+                    position: absolute;
+                    left: 55%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                    z-index: 2;
+                }
+
+            }
+
+        }
+
+        .tumbnails {
+            margin-top: 1.5rem;
+            gap: 1.5rem;
+
+            img {
+                width: 148px;
+                height: 124px;
+                border-radius: 10px;
+                object-fit: cover;
+
+            }
+
+        }
+
+    }
+
+    .description {
+        .description-header {
+            h1 {}
+
+            button.favorite {
+                img {}
+            }
+
+            .rating {
+                .stars-wrapper {}
+
+                .reviewers-count {
+                    span.ammount {}
+
+                    span {}
+                }
+            }
+        }
+
+        p {}
+
+        .specifications {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .description-footer {
+            .price {
+                &>span {
+                    &:first-of-type {}
+
+                    &:last-of-type {}
+                }
+
+                span.old-price {}
+            }
+
+            button {}
+        }
+    }
+
+
+}
+
+
+
 footer {
     padding-block: 80px 60px;
     line-height: 150%;
