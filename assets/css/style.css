@@ -747,6 +747,8 @@ section.details-page {
         section.reviews {
             padding: 24px;
             margin-block: 2rem;
+            background-color: var(--white-color);
+            border-radius: 10px;
 
             .reviews-header {
                 margin-bottom: 2rem;
@@ -774,16 +776,34 @@ section.details-page {
             .reviews-wrapper {
                 li {
                     article {
+                        --image-size: 56px;
+                        margin-bottom: 24px;
+                        letter-spacing: -2%;
+                        line-height: 150%;
+                        font-size: 14px;
+                        color: var(--secondary-color);
+
                         .article-header {
+                            margin-bottom: 12px;
+
                             .reviewer {
+                                gap: 1rem;
+
                                 img {
-                                    width: 56px;
-                                    height: 56px;
+                                    width: var(--image-size);
+                                    height: var(--image-size);
                                     border-radius: 50%;
                                 }
 
                                 div {
-                                    h3 {}
+                                    h3 {
+                                        margin-bottom: .5rem;
+                                        font-weight: 700;
+                                        letter-spacing: -3%;
+                                        font-size: 20px;
+                                        color: var(--text-dark);
+                                        text-transform: capitalize;
+                                    }
 
                                     span {}
 
@@ -791,14 +811,37 @@ section.details-page {
                             }
 
                             .date-rating-wrapper {
-                                span {}
+                                span {
+                                    margin-bottom: 0.5rem;
+                                }
 
-                                &>div {}
+                                .stars-wrapper {
+                                    gap: 2px;
+                                }
                             }
+
+                        }
+
+                        p {
+                            margin-left: calc(var(--image-size) + 1rem);
+                            line-height: 200%;
+                            font-weight: 400;
                         }
 
                     }
                 }
+            }
+
+
+            button {
+                gap: 0.5rem;
+                padding: 10px 20px;
+                font-weight: 600;
+                line-height: 150%;
+                letter-spacing: -2%;
+                color: var(--secondary-color);
+                margin-inline: auto;
+                background: none;
             }
         }
 
