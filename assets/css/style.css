@@ -229,6 +229,8 @@ section.pickup-dropoff-filter {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
 
         .filters-wrapper {
             background-color: var(--white-color);
@@ -899,6 +901,8 @@ footer {
     .footer-inner-wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
 
         .footer-logo {
             P {
@@ -913,6 +917,7 @@ footer {
         .footer-nav {
             display: flex;
             gap: 60px;
+            flex-wrap: wrap;
 
             .nav-group {
 
@@ -1039,6 +1044,22 @@ footer {
 }
 
 
+@media (max-width: 1270px) {
+    section.pickup-dropoff-filter {
+        form {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        .search {
+            width: 340px;
+        }
+    }
+}
+
 @media (max-width: 960px) {
     header {
         .logo-search-wrapper {
@@ -1099,6 +1120,90 @@ footer {
             position: absolute;
             right: 0;
             top: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        .wrapper {
+            justify-content: center;
+        }
+    }
+
+    section.pickup-dropoff-filter {
+        form {
+            gap: 0;
+        }
+
+        form button {
+            margin-block: -10px;
+            z-index: 2;
+        }
+    }
+}
+
+@media (max-width: 668px) {
+    footer {
+        .footer-inner-wrapper:last-of-type {
+            justify-content: center;
+        }
+    }
+
+    section.pickup-dropoff-filter {
+        form {
+            gap: 0;
+
+            & .filters-wrapper {
+                .body {
+                    gap: 20px;
+                }
+            }
+        }
+
+        form button {
+            margin-block: -10px;
+            z-index: 2;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    section.pickup-dropoff-filter {
+
+        form {
+
+            & .filters-wrapper {
+                padding: 1rem;
+
+                .body {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 40px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        .search {
+            width: 230px;
+        }
+    }
+
+}
+
+@media (max-width: 380px) {
+    header {
+        .logo-search-wrapper {
+
+            .search {
+                width: 205px;
+                left: 45%;
+            }
         }
     }
 }
