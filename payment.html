@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-search-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cta-wrapper">
+                <div class="cta">
+                    <img src="assets/images/icons/Like.png" alt="heart icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/notification.svg" alt="notification icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/setting2.svg" alt="settings icon">
+                </div>
+                <div class="cta">
+                    <img src="assets/images/icons/user.png" alt="user icon">
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="payment-container flex justify-between">
+                <div class="checkout-forms flex">
+                    <form action="booking">
+                        <section class="form-section">
+                            <div class="section-header flex">
+                                <h2>Billing Info</h2>
+                                <div class="flex justify-between">
+                                    <p>Please enter your billing info</p>
+                                    <span>Step 1 of 4</span>
+
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-group flex">
+                                    <label for="billing-name">Name</label>
+                                    <input type="text" id="billing-name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group flex">
+                                    <label for="billing-phone">Phone Number</label>
+                                    <input type="tel" id="billing-phone" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group flex">
+                                    <label for="billing-address">Address</label>
+                                    <input type="text" id="billing-address" placeholder="Address" required>
+                                </div>
+                                <div class="form-group flex">
+                                    <label for="billing-city">Town / City</label>
+                                    <input type="text" id="billing-city" placeholder="Town or city" required>
+                                </div>
+                            </div>
+                        </section>
+    
+                        <section class="form-section">
+                            <div class="section-header">
+                                <h2>Rental Info</h2>
+                                <div class="flex justify-between">
+                                    <p>Please select your rental date</p>
+                                    <span>Step 2 of 4</span>
+
+                                </div>
+                            </div>
+    
+                            <fieldset class="rental-fieldset">
+                                <input id="pickup" type="radio">
+                                <label for="pickup">pick - up</label>
+                                <div class="form-grid">
+                                    <div class="form-group flex">
+                                        <label for="pickup-location">Locations</label>
+                                        <select name="pickup-location" id="pickup-location" required>
+                                            <option value="">Select your city</option>
+                                            <option value="">tbilisi</option>
+    
+                                        </select>
+                                    </div>
+                                    <div class="form-group flex">
+                                        <label for="pickup-date">Date</label>
+                                        <input type="date" id="pickup-date" name="pickup_date" required>
+                                    </div>
+                                    <div class="form-group flex">
+                                        <label for="pickup-time">Time</label>
+                                        <input type="time" id="pickup-time" name="pickup_time" required>
+                                    </div>
+                                </div>
+    
+                            </fieldset>
+    
+                            <fieldset class="rental-fieldset">
+                                <input id="dropoff" type="radio">
+                                <label for="dropoff">drop - off</label>
+                                <div class="form-grid">
+                                    <div class="form-group flex">
+                                        <label for="dropoff-location">Locations</label>
+                                        <select id="dropoff-location" name="dropoff_location" required>
+                                            <option value="">Select your city</option>
+                                            <option value="">tbilisi</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group flex">
+                                        <label for="dropoff-date">Date</label>
+                                        <input type="date" id="dropoff-date" name="dropoff_date" required>
+                                    </div>
+                                    <div class="form-group flex">
+                                        <label for="dropoff-time">Time</label>
+                                        <input type="time" id="dropoff-time" name="dropoff_time" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </section>
+    
+                        <section class="form-section">
+                            <div class="section-header">
+                                <h2>Payment Method</h2>
+                                <div class="flex justify-between">
+                                    <p>Please enter your payment method</p>
+                                    <span class="step-counter">Step 3 of 4</span>
+
+                                </div>
+                            </div>
+                            <div class="payment-options">
+                                <div class="payment-method-card">
+                                    <div class="method-header">
+                                        <input type="radio" id="method-credit-card" name="payment_method"
+                                            value="credit_card" checked>
+                                        <label for="method-credit-card">Credit Card</label>
+                                    </div>
+                                    <div class="form-grid">
+                                        <div class="form-group flex">
+                                            <label for="card-number">Card Number</label>
+                                            <input type="text" id="card-number" name="card_number"
+                                                placeholder="Card number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </section>
+    
+                    </form>
+                </div>
+    
+    
+    
+    
+    
+    
+    
+    
+                <div class="rental-summary">
+                    rental
+                </div>
+    
+    
+    
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <div class="container">
+        <footer>
+            <div class="footer-inner-wrapper">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/images/icons/Logo.svg" alt="morent logo">
+                    </a>
+                    <p>Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="nav-group about">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group community">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group socials">
+                        <h4>Socials</h4>
+                        <ul>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                            <li><a href="#">nav item </a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+
+            <div class="footer-inner-wrapper">
+                <div class="copy">
+                    <p>©2022 MORENT. All rights reserved</p>
+                </div>
+                <div class="privacy-policy">
+                    <a href="#">Privacy & Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
