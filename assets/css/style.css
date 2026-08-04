@@ -971,6 +971,10 @@ section.details-page {
             .rental-fieldset {
                 border: none;
 
+                &:last-child {
+                    margin-top: 32px;
+                }
+
                 label {
                     font-weight: 600;
                     font-size: 16px;
@@ -1111,6 +1115,77 @@ section.details-page {
                 }
             }
         }
+    }
+
+    .rental-summary {
+        height: fit-content;
+        padding: 24px;
+        margin-top: 32px;
+        background-color: var(--white-color);
+        border-radius: 10px;
+        rental-header {
+            h2 {}
+
+            span {}
+        }
+
+
+        .car-info {
+            .car-info-img {
+                --width: 148px;
+                --height: 124px;
+                border-radius: 10px;
+                width: var(--width);
+                height: var(--height);
+                cursor: pointer;
+                transition-duration: .3s;
+                position: relative;
+                background-color: #3563E9;
+                background-image: url(../images/icons/rectangle.svg);
+                background-size: 26.5px calc(var(--height) / 4);
+                background-position-x: -5px;
+                overflow: hidden;
+
+                img {
+                    padding-inline: 8px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .car-meta {
+                .rental-car-header {
+                    h3 {}
+                }
+
+                .rating {
+                    margin-top: 10px;
+                    gap: 8px;
+
+                    .stars-wrapper {
+                        gap: 2px;
+                    }
+
+                    .reviewers-count {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: var(--secondary-color);
+
+                        h2 {}
+
+                        span {
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+
     }
 }
 
