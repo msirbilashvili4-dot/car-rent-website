@@ -1155,6 +1155,7 @@ section.details-page {
             }
 
             .car-meta {
+                margin-left: 16px;
                 .rental-car-header {
                     h3 {}
                 }
@@ -1184,7 +1185,49 @@ section.details-page {
 
         }
 
+        .pricing-details {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            .price-row {
+                .price-label {
+                    
+                }
+                .price-value {
+                    
+                }
+                &:last-child {
+                    margin-top: 24px;
+                }
+            }
+        }
 
+        .promo-box {
+            padding: 16px 32px;
+            background-color: #F6F7F9;
+            border-radius: 10px;
+            input {
+                border: none;
+                background-color: #F6F7F9;
+            }
+            button {
+                background-color: inherit;
+            }
+        }
+
+        .total-price-section {
+            .total-title {
+                h4 {
+
+                }
+                p {
+
+                }
+            }
+
+            .total-amount {
+
+            }
+        }
 
     }
 }
