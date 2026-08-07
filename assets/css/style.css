@@ -891,15 +891,11 @@ section.details-page {
 }
 
 .payment-container {
-    padding-inline: 32px;
+    padding: 32px;
 
     .checkout-forms {
         flex-direction: column;
-        width: 852px;
-        padding-left: 32px;
-        margin-bottom: 32px;
-        margin-top: 32px;
-        margin-left: 24px;
+        width: 955px;
 
         .form-section {
             background-color: var(--white-color);
@@ -1118,15 +1114,31 @@ section.details-page {
     }
 
     .rental-summary {
+        width: 518px;
         height: fit-content;
         padding: 24px;
-        margin-top: 32px;
         background-color: var(--white-color);
         border-radius: 10px;
-        rental-header {
-            h2 {}
 
-            span {}
+        .rental-header {
+            width: 347px;
+
+            h2 {
+                margin-bottom: 4px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 150%;
+                letter-spacing: -3%;
+                color: var(--text-dark);
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: -2%;
+                color: var(--secondary-color);
+            }
         }
 
 
@@ -1156,8 +1168,15 @@ section.details-page {
 
             .car-meta {
                 margin-left: 16px;
+
                 .rental-car-header {
-                    h3 {}
+                    h3 {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 150%;
+                        letter-spacing: -3%;
+                        color: var(--text-dark);
+                    }
                 }
 
                 .rating {
@@ -1168,10 +1187,12 @@ section.details-page {
                         gap: 2px;
                     }
 
-                    .reviewers-count {
+                    .reviewer-count {
                         font-weight: 500;
                         font-size: 14px;
-                        color: var(--secondary-color);
+                        line-height: 150%;
+                        letter-spacing: -2%;
+                        color: #596780;
 
                         h2 {}
 
@@ -1188,13 +1209,24 @@ section.details-page {
         .pricing-details {
             margin-top: 32px;
             margin-bottom: 32px;
+
             .price-row {
                 .price-label {
-                    
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: -2%;
+                    color: var(--secondary-color);
                 }
+
                 .price-value {
-                    
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: -2%;
+                    color: var(--text-dark);
                 }
+
                 &:last-child {
                     margin-top: 24px;
                 }
@@ -1202,30 +1234,59 @@ section.details-page {
         }
 
         .promo-box {
-            padding: 16px 32px;
+            padding: 3px 32px;
             background-color: #F6F7F9;
             border-radius: 10px;
+
             input {
+                width: 334px;
+                height: 56px;
                 border: none;
                 background-color: #F6F7F9;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: -2%;
+                color: var(--secondary-color);
             }
+
             button {
                 background-color: inherit;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: -2%;
+                color: var(--text-dark);
             }
         }
 
         .total-price-section {
+            margin-top: 32px;
+
             .total-title {
                 h4 {
-
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 150%;
+                    letter-spacing: -3%;
+                    color: var(--text-dark);
                 }
-                p {
 
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: -2%;
+                    color: var(--secondary-color);
                 }
             }
 
             .total-amount {
-
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: var(--text-dark);
             }
         }
 
@@ -1588,4 +1649,144 @@ footer {
     }
 }
 
-@media (screen) {}
+.payment-container {
+    /* ... თქვენი არსებული ძირითადი სტილები ... */
+
+    /* პლანშეტების და მობილურების ეკრანები (1024px და ქვემოთ) */
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        /* Rental Summary ადის სულ მაღლა */
+        padding: 16px;
+        gap: 32px;
+
+        & .rental-summary {
+            width: 100%;
+            padding: 24px;
+            /* ვინარჩუნებთ დიდ შიდა დაშორებას */
+        }
+
+        & .checkout-forms {
+            width: 100%;
+            gap: 32px;
+
+            & .form-section {
+                padding: 24px;
+
+                & .section-header {
+                    & .flex.justify-between {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* მობილური ტელეფონების ეკრანები (768px და ქვემოთ) */
+    @media (max-width: 768px) {
+        & .checkout-forms {
+            & .form-section {
+
+                /* ინპუტები ჩამოდის სათითაოდ ერთმანეთის ქვეშ */
+                & .form-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
+                & .rental-fieldset {
+                    & .form-grid {
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        padding-top: 16px;
+                    }
+                }
+
+                & .payment-options {
+                    & .payment-method-card {
+                        & .method-header {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 12px;
+                        }
+                    }
+                }
+
+                & .confirmation-section {
+                    & .confirmation-options {
+                        & .checkbox-card {
+                            padding: 16px;
+                            align-items: flex-start;
+
+                            & input {
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+
+                    & button {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        /* ზედა პანელის მობილურის ვიზუალი - ზუსტად როგორც ახალ ფოტოზეა */
+        & .rental-summary {
+            & .car-info {
+                display: flex;
+                flex-direction: row;
+                /* ვინარჩუნებთ ჰორიზონტალურ ხაზს */
+                align-items: center;
+                gap: 16px;
+
+                & .car-info-img {
+                    width: 116px;
+                    /* ზომა რჩება უცვლელი და პატარა */
+                    height: 80px;
+                    flex-shrink: 0;
+                }
+
+                & .car-meta {
+                    & .rental-car-header h3 {
+                        font-size: 20px;
+                        /* ტექსტის ზომა ერგება მობილურს */
+                    }
+                }
+            }
+
+            /* პრომო კოდის ბლოკი - რჩება ერთ ხაზზე */
+            & .promo-box {
+                display: flex;
+                flex-direction: row;
+                /* ინარჩუნებს გვერდიგვერდ განლაგებას */
+                justify-content: space-between;
+                align-items: center;
+                padding: 4px 16px;
+
+                & input {
+                    width: calc(100% - 90px);
+                    /* უტოვებს ადგილს ღილაკს */
+                    height: 48px;
+                }
+
+                & button {
+                    width: auto;
+                    background-color: transparent;
+                    color: var(--text-dark);
+                    padding: 0;
+                }
+            }
+
+            /* ფასის ჯამური ხაზი - რჩება ერთ ხაზზე გაშლილი კიდეებში */
+            & .total-price-section {
+                display: flex;
+                flex-direction: row;
+                /* არ ვცვლით ქოლუმად */
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
