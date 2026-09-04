@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>MORENT Dashboard</title>
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+<div class="app">
+
+  <div class="topbar">
+    <div class="logo">MORENT</div>
+    <div class="search">🔍 &nbsp; Search something here</div>
+    <div class="top-icons">
+      <div class="icon-btn">♥</div>
+      <div class="icon-btn">🔔<span class="dot"></span></div>
+      <div class="icon-btn">⚙</div>
+      <div class="avatar"></div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <div class="menu-label">MAIN MENU</div>
+      <div class="nav-item active">🏠 Dashboard</div>
+      <div class="nav-item">🚗 Car Rent</div>
+      <div class="nav-item">📊 Insight</div>
+      <div class="nav-item">🧾 Reimburse</div>
+      <div class="nav-item">✉️ Inbox</div>
+      <div class="nav-item">📅 Calender</div>
+
+      <div class="menu-label" style="margin-top:20px;">PREFERENCES</div>
+      <div class="nav-item">⚙ Settings</div>
+      <div class="nav-item">❓ Help &amp; Center</div>
+      <div class="darkmode">🌓 Dark Mode
+        <div class="toggle"><div class="knob"></div></div>
+      </div>
+
+      <div class="logout">↩ Log Out</div>
+    </div>
+
+    <div class="content">
+      <div class="col-left">
+        <div class="card">
+          <h3>Details Rental</h3>
+          <canvas id="mapCanvas" width="620" height="220"></canvas>
+
+          <div class="car-row">
+            <div class="car-thumb">🚗</div>
+            <div class="car-info">
+              <h4>Nissan GT&nbsp;–&nbsp;R</h4>
+              <span>Sport Car</span>
+            </div>
+            <div class="car-id">#9761</div>
+          </div>
+
+          <div class="rental-grid">
+            <div class="lead"><span class="bullet"></span> Pick&nbsp;–&nbsp;Up</div>
+            <div class="field"><label>Locations</label><div class="val">Kota Semarang ▾</div></div>
+            <div class="field"><label>Date</label><div class="val">20 July 2022 ▾</div></div>
+            <div class="field"><label>Time</label><div class="val">07.00 ▾</div></div>
+
+            <div class="lead"><span class="bullet" style="background:#42506B;box-shadow:none;"></span> Drop&nbsp;–&nbsp;Off</div>
+            <div class="field"><label>Locations</label><div class="val">Kota Semarang ▾</div></div>
+            <div class="field"><label>Date</label><div class="val">21 July 2022 ▾</div></div>
+            <div class="field"><label>Time</label><div class="val">01.00 ▾</div></div>
+          </div>
+
+          <div class="divider"></div>
+          <div class="total">
+            <div>
+              <h4>Total Rental Price</h4>
+              <p>Overall price and includes rental discount</p>
+            </div>
+            <div class="price">$80.00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-right">
+        <div class="card">
+          <div class="card-head">
+            <h3 style="margin:0;">Top 5 Car Rental</h3>
+            <span style="color:var(--muted);">⋯</span>
+          </div>
+          <div class="donut-wrap">
+            <canvas id="donutCanvas" width="150" height="150"></canvas>
+            <div class="legend" id="legend"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3 style="margin:0;">Recent Transaction</h3>
+            <span class="view-all">View All</span>
+          </div>
+          <div id="txList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="dashboard.js" defer></script>
+</body>
+</html>

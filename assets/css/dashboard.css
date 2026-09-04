@@ -1,0 +1,187 @@
+:root{
+    --blue:#3563E9;
+    --blue-dark:#1a3a8f;
+    --bg:#F6F7F9;
+    --card:#FFFFFF;
+    --text:#1A202C;
+    --muted:#90A3BF;
+    --line:#E5E9F0;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#E9EBF0;
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    color:var(--text);
+    display:flex;
+    justify-content:center;
+    padding:24px;
+  }
+  .app{
+    width:1100px;
+    max-width:100%;
+    background:var(--bg);
+    border-radius:24px;
+    box-shadow:0 10px 40px rgba(20,30,60,.12);
+    overflow:hidden;
+  }
+
+  /* TOPBAR */
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 32px;
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-size:22px;font-weight:800;color:var(--blue);letter-spacing:.5px;}
+  .search{
+    flex:1;
+    max-width:420px;
+    margin:0 40px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#F6F7F9;
+    border-radius:10px;
+    padding:10px 16px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  .top-icons{display:flex;align-items:center;gap:18px;}
+  .icon-btn{
+    width:38px;height:38px;border-radius:50%;
+    background:#F6F7F9;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;color:#42506B;
+  }
+  .icon-btn .dot{
+    position:absolute;top:6px;right:7px;
+    width:8px;height:8px;border-radius:50%;background:#FF4D4D;
+    border:2px solid #fff;
+  }
+  .avatar{
+    width:38px;height:38px;border-radius:50%;
+    background:linear-gradient(135deg,#556,#223);
+  }
+
+  /* LAYOUT */
+  .layout{display:flex;}
+  .sidebar{
+    width:210px;
+    background:var(--card);
+    padding:24px 16px;
+    border-right:1px solid var(--line);
+  }
+  .menu-label{
+    font-size:11px;color:var(--muted);letter-spacing:1px;
+    margin:8px 12px;
+  }
+  .nav-item{
+    display:flex;align-items:center;gap:12px;
+    padding:11px 14px;border-radius:10px;
+    color:#42506B;font-size:14.5px;font-weight:500;
+    margin-bottom:4px;cursor:pointer;
+  }
+  .nav-item.active{background:var(--blue);color:#fff;}
+  .nav-item svg{flex-shrink:0;}
+  .darkmode{
+    display:flex;align-items:center;gap:10px;
+    padding:11px 14px;font-size:14.5px;color:#42506B;
+  }
+  .toggle{
+    margin-left:auto;width:44px;height:24px;background:var(--blue);
+    border-radius:20px;position:relative;
+  }
+  .toggle .knob{
+    width:18px;height:18px;background:#fff;border-radius:50%;
+    position:absolute;top:3px;left:3px;
+  }
+  .logout{
+    display:flex;align-items:center;gap:12px;
+    padding:11px 14px;color:#42506B;font-size:14.5px;
+    margin-top:24px;
+  }
+
+  .content{flex:1;padding:28px 28px;display:flex;gap:24px;align-items:flex-start;}
+  .col-left{flex:1.55;display:flex;flex-direction:column;gap:24px;}
+  .col-right{flex:1;display:flex;flex-direction:column;gap:24px;}
+
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:22px 22px 26px;
+  }
+  .card h3{margin:0 0 16px;font-size:16px;font-weight:700;}
+
+  /* MAP */
+  #mapCanvas{
+    width:100%;height:220px;border-radius:12px;display:block;
+    background:#EDF1F7;
+  }
+
+  /* CAR ROW */
+  .car-row{display:flex;align-items:center;gap:16px;margin-top:18px;}
+  .car-thumb{
+    width:90px;height:60px;border-radius:10px;
+    background:linear-gradient(135deg,#e9edf3,#c9d3e0);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .car-info h4{margin:0;font-size:16px;font-weight:700;}
+  .car-info span{font-size:13px;color:var(--muted);}
+  .car-id{margin-left:auto;font-size:13px;color:var(--muted);}
+
+  .rental-grid{
+    display:grid;grid-template-columns:1fr 1fr 1fr;
+    gap:16px;margin-top:20px;font-size:13px;
+  }
+  .rental-grid .lead{
+    grid-column:1/-1;display:flex;align-items:center;gap:8px;
+    font-weight:600;color:var(--text);font-size:14px;margin-top:6px;
+  }
+  .lead .bullet{width:9px;height:9px;border-radius:50%;background:var(--blue);
+    box-shadow:0 0 0 4px rgba(53,99,233,.15);}
+  .field label{display:block;color:var(--muted);margin-bottom:6px;font-size:12.5px;}
+  .field .val{
+    font-weight:600;font-size:14px;display:flex;align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid var(--line);padding-bottom:8px;
+  }
+
+  .divider{height:1px;background:var(--line);margin:20px 0 16px;}
+  .total{display:flex;justify-content:space-between;align-items:flex-end;}
+  .total h4{margin:0 0 4px;font-size:15px;}
+  .total p{margin:0;color:var(--muted);font-size:12.5px;}
+  .total .price{font-size:22px;font-weight:800;}
+
+  /* DONUT CARD */
+  .card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+  .donut-wrap{display:flex;align-items:center;gap:18px;}
+  #donutCanvas{flex-shrink:0;}
+  .legend{flex:1;font-size:13.5px;}
+  .legend .row{display:flex;align-items:center;padding:6px 0;}
+  .legend .sw{width:8px;height:8px;border-radius:50%;margin-right:10px;}
+  .legend .name{flex:1;color:#42506B;}
+  .legend .val{font-weight:700;}
+
+  /* TRANSACTIONS */
+  .view-all{color:var(--blue);font-size:13px;font-weight:600;cursor:pointer;}
+  .tx{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);}
+  .tx:last-child{border-bottom:none;}
+  .tx-thumb{
+    width:56px;height:38px;border-radius:8px;
+    background:linear-gradient(135deg,#e9edf3,#c9d3e0);
+  }
+  .tx-info{flex:1;}
+  .tx-info h5{margin:0;font-size:14px;font-weight:700;}
+  .tx-info span{font-size:12.5px;color:var(--muted);}
+  .tx-right{text-align:right;}
+  .tx-right .date{font-size:12px;color:var(--muted);display:block;margin-bottom:4px;}
+  .tx-right .amt{font-weight:700;font-size:14px;}
+
+  @media(max-width:900px){
+    .content{flex-direction:column;}
+    .sidebar{display:none;}
+  }
